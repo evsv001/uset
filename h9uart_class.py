@@ -1,11 +1,6 @@
 #!/usr/bin/python
 # -- coding: utf-8 --
 
-# 文件名  :   uart_class.py
-# 时间    :   2022/06/28 09:46:11
-# 作者    :   tic
-# Email   :   evsv@sohu.com
-
 import threading
 import serial
 import serial.tools.list_ports
@@ -134,20 +129,4 @@ class Communication():
 
 
 # -----------------------------------------------------------------b
-# # 设置
-# Communication.Print_Used_Com()
-# Ret = True  #是否创建成功标志
-# Engine1 = Communication("com8", 115200, 0.5)
-# Engine1.Print_Name()
 
-# # 发送设置纬度
-
-# buffer = struct.pack("<BBBBBBBB", 0x99, 0x66, 0x06, 0x04, 0x11, 0x22, 0x22,
-#                      0x22)
-# print(buffer.hex())
-# Engine1.Send_data(buffer)
-
-# # 接收循环
-# if (Ret):
-#     # Engine1.Recive_data(0)
-#     Engine1.beginT()
